@@ -2,9 +2,6 @@
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#Flexbox a {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
     gap: 30px;
