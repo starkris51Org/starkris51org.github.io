@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<!-- Comments Writen by Kristoffer Bekkevold (grunnen til dette er på engelsk er at det er lettere å kommentere på engelsk) -->
+
+<!-- Head -->
+
+<head>
+    <title> MatLegen </title> <!-- Title -->
+    <meta charset="utf8"> <!-- character set -->
+    <link rel="icon" href="/images/MatlegenLogo.png"> <!-- Icon of the website -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Importing our main CSS sheet -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+    <!-- Importing our script, this one is only used to enter different parts of the site. -->
+</head>
+
+<!-- Body -->
+
+<body>
+    <!-- Our Container that holds header, content, Footer -->
+    <div id="Container">
+
+        <!-- Start of our Header-->
+        <div id="Header">
+            <!-- Our content in our header Start-->
+
+            <!-- Image logo made by kristoffer bekkevold -->
+            <div id="Logo" onclick="ReturnHome()">
+                <!-- ReturnHome() is located at js/script.js -->
+                <img src="images/MatlegenLogo.png" alt="LogoenTilMatlegen">
+            </div>
+
+
+            <!-- Meny Icon made by kristoffer Bekkevold -->
+            <div id="Meny" onclick="Meny()">
+                <!-- Meny() is located at js/script.js -->
+                <img src="images/MenyIcon.png" alt="MenyIcon">
+            </div>
+
+
+        </div> <!-- End of our Header -->
+
+        <!-- Start of our Content -->
+        <div id="Content">
+
+            <!-- All our divs in Content will be centered -->
+            <center>
+
+                <h1> Velkommen til MatLegen.no </h1> <!-- H1 text -->
+                <h2> Vi Hjelper altid deg </h2> <!-- H2 Text -->
+
+                <!-- The mainline buttons -->
+                <div id="ButtonContainer" onclick="SunnKostholdPage()">
+
+                    <!-- Image for button (License: Creative Commons)-->
+                    <img src="images/HealthyFood.jpeg" alt="SunnkostholdBilde">
+
+                    <h1> Sunn kosthold </h1>
+
+                </div>
+
+                <div id="ButtonContainer" onclick="GodHelsePage()">
+
+                    <!-- Image for button (License: Creative Commons)-->
+                    <img src="images/godhelse.webp" alt="GodHelseBilde">
+
+                    <h1> God Helse </h1>
+
+                </div>
+                <!-- End of the mainline buttons -->
+
+
+                <!-- Spørsmålers bord  -->
+                <div id="SpørsmålerBord">
+
+                    <h1> Spørsmåler </h1>
+
+                    <ul type="disc">
+
+                        <li> Hva gjør vi? </li>
+
+                        <dd>Svar: MatLegen.no hjelper andre folk å vite hva som gir dem god helse og hvordan man får
+                            en
+                            sunn kosthold </dd>
+
+                        <li> Hva handler nettsiden om? </li>
+
+                        <dd>svar: Nettsiden består av informasjon om sunn kosthold og god helse </dd>
+
+                    </ul>
+
+                    <img src="images/MatlegenLogo.png" alt="LogoenTilMatlegen">
+
+                </div>
+                <!-- End of Spørsmålers bord -->
+
+
+            </center>
+
+        </div> <!-- End of our Content -->
+
+        <!-- Start of our Footer -->
+        <div id="Footer">
+
+            <!-- 2 parts of our Footer (Kontakt, Credits) -->
+
+            <div id="Kontakt">
+                <h1> Kontakt </h1>
+
+                <ul>
+                    <li> Adresse: Vestby, skaubrynet 7 </li>
+
+                    <li> Telefon: +45 405 35 888 </li>
+                </ul>
+
+            </div>
+
+            <div id="Credits">
+                <h1> Credits </h1>
+
+                <ul>
+                    <li> Laget av kristoffer bekkevold </li>
+
+                    <li> Spesiel takk til Creative Commons </li>
+                </ul>
+
+            </div>
+
+        </div> <!-- End of our Footer -->
+
+    </div> <!-- End of our Container -->
+
+
+</body>
+
+</html>

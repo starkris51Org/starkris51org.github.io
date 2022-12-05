@@ -1,0 +1,244 @@
+/* Setting our Main container to flex */
+#Container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*height: 120vh;*/
+    height: 260vh;
+}
+
+/* 
+Min FargePallet:
+-svak hvit: 239, 239, 239
+-sterkere hvis: 245, 245, 245
+-litt mørkere: hvit 210, 210, 210
+-sterk grønnfarge: 14, 170, 14
+*/
+
+/* Desktop */
+
+/* Start of Header Design */
+#Header {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(245, 245, 245);
+    box-shadow: 50px;
+    width: 100%;
+    height: 8%;
+    padding: 5px 0px;
+}
+
+
+
+/* Setting our Header Images 100% in both heigh and width which makes it sized around the div */
+#Header img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Changing our Cursor to pointer when hovering the Header images*/
+#Header img:hover {
+    cursor: pointer;
+}
+
+/* End of Header Design */
+
+/* Start of our Styling for Content */
+#Content {
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+    height: 100%;
+}
+
+/* Setting up our font and size for h1 texts */
+#Content h1 {
+    font-weight: 200px;
+    font-size: 2rem;
+    font-family: Rubik, sans-serif;
+    word-wrap: break-word;
+}
+
+#Content h2 {
+    font-weight: 100px;
+    font-family: Rubik, sans-serif;
+    word-wrap: break-word;
+}
+
+/* Styling our Buttons */
+#ButtonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 15px;
+    background-color: rgb(245, 245, 245);
+    width: 60%;
+    height: 15%;
+    border-radius: 20px;
+    box-shadow: 0.9rem 0.9rem 0.5rem rgb(104, 104, 104);
+    margin: 15px;
+}
+
+/* Styling our The image inside the button container to make it fit */
+#ButtonContainer img {
+    height: 300px;
+    width: 40%;
+    object-fit: cover;
+
+    background-color: rgb(245, 245, 245);
+    border: solid rgb(14, 170, 14) 4px;
+    border-radius: 1.3rem;
+}
+
+/* Giving the buttonContainer a blue border when hovering and changing the cursor to pointer */
+#ButtonContainer:hover {
+    border: solid rgb(14, 118, 170) 4px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+/* Styling the spørsmålers bord  */
+#SpørsmålerBord {
+    text-align: center;
+    background-color: rgb(239, 239, 239);
+    width: 40%;
+    border-radius: 4rem;
+    box-shadow: 0.9rem 0.9rem 0.5rem rgb(104, 104, 104);
+}
+
+#SpørsmålerBord h1 {
+    text-decoration-line: underline;
+}
+
+#SpørsmålerBord li {
+    font-size: larger;
+    font-family: Rubik, sans-serif;
+    margin: 10px;
+}
+
+#SpørsmålerBord dd {
+    text-align: center;
+    text-align: left;
+    font-size: 0.9rem;
+    font-family: Rubik, sans-serif;
+    gap: 50px;
+}
+
+#SpørsmålerBord img {
+    height: 30%;
+    width: 30%;
+}
+
+/* End of the Styling of our Content */
+
+/* Styling of our Footer */
+#Footer {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(239, 239, 239);
+    width: 100%;
+    height: 13%;
+    font-size: 1rem;
+    font-family: Rubik, sans-serif;
+
+}
+
+#Footer h1 {
+    text-decoration-line: underline;
+}
+
+#Footer li {
+    text-decoration-line: none;
+}
+
+/* End the of the styling of our Footer */
+
+/* Mobile Version (Dette var jobbet med før desktop versjonen)*/
+@media only screen and (max-width: 600px) {
+
+    #Container {
+        height: 180vh;
+    }
+
+    #Content h1 {
+        font-weight: 200px;
+        font-size: 1.7rem;
+        font-family: Rubik, sans-serif;
+        word-wrap: break-word;
+    }
+
+    #Header {
+        justify-content: space-between;
+    }
+
+    #Meny img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #ButtonContainer {
+        display: inline-flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 10px;
+        background-color: rgb(245, 245, 245);
+        width: 80%;
+        height: 20%;
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px rgb(104, 104, 104);
+    }
+
+    #ButtonContainer:hover {
+        border: solid rgb(14, 118, 170) 4px;
+        height: fit-content;
+    }
+
+    #ButtonContainer img {
+        height: 150px;
+        width: 50%;
+        object-fit: cover;
+
+        background-color: rgb(245, 245, 245);
+        border: solid rgb(14, 170, 14) 4px;
+        border-radius: 25px;
+    }
+
+    #ButtonContainer h1 {
+        text-align: center;
+        padding: 15px;
+    }
+
+    #SpørsmålerBord {
+        text-align: center;
+        background-color: rgb(239, 239, 239);
+        width: 80%;
+        border-radius: 50px;
+        box-shadow: 10px 10px 5px rgb(104, 104, 104);
+    }
+
+    #SpørsmålerBord img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #Footer {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    #Footer li {
+        text-decoration-line: none;
+    }
+
+}
+
+@media only screen and (max-height: 700px) {
+    #Container {
+        height: 270vh;
+    }
+}
